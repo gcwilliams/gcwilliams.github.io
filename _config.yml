@@ -1,0 +1,10 @@
+# Site settings
+title: "" 
+email: gaz_williams@hotmail.com
+description: >
+baseurl: "" 
+url: "http://www.gcwilliams.co.uk"
+github_username:  gcwilliams
+
+# Build settings
+markdown: kramdown
