@@ -8,6 +8,10 @@ body {
   overflow: hidden;
   margin-bottom: 25px;
 
+  @media all and (max-width: $screen-xs-max) {
+    height: 135px;
+  }
+
   img {
     position: absolute;
     width: 100%;

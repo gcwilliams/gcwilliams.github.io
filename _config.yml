@@ -5,6 +5,7 @@ description: >
 baseurl: "" 
 url: "http://www.gcwilliams.co.uk"
 github_username:  gcwilliams
+permalink: pretty
 
 # Build settings
 markdown: kramdown
