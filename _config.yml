@@ -8,3 +8,5 @@ github_username:  gcwilliams
 
 # Build settings
 markdown: kramdown
+sass:
+  style: compressed

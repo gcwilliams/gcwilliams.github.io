@@ -1,0 +1,23 @@
+body {
+  font-family: 'Inconsolata', Arial, sans-serif;
+}
+
+.banner {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 25px;
+
+  img {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @media all and (max-width: $screen-xs-max) {
+      width: 130%;
+    }
+  }
+
+}

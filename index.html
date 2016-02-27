@@ -1,1 +1,20 @@
-gcwilliams.co.uk
+---
+layout: default
+banner: balcombe.jpg
+---
+
+<div class="col-xs-12 home">
+
+  <ul class="list-unstyled">
+    {% for post in site.posts %}
+      <li>
+        <span>{{post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
