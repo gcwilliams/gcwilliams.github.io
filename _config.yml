@@ -4,6 +4,7 @@ description: >
 url: "http://www.gcwilliams.co.uk"
 baseurl: "" 
 github_username:  gcwilliams
+ga: UA-74417653-1
 
 # Build settings
 permalink: pretty
