@@ -1,13 +1,13 @@
 # Site settings
-title: "" 
 email: gaz_williams@hotmail.com
 description: >
 baseurl: "" 
 url: "http://www.gcwilliams.co.uk"
 github_username:  gcwilliams
-permalink: pretty
 
 # Build settings
+permalink: pretty
 markdown: kramdown
 sass:
   style: compressed
+excerpt_separator: <!--more-->

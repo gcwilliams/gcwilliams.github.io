@@ -1,18 +1,19 @@
 ---
 layout: default
+title: gcwilliams
 banner: balcombe.jpg
 ---
 
-<div class="col-xs-12 home">
+<div class="home">
 
   <ul class="list-unstyled">
     {% for post in site.posts %}
       <li>
-        <span>{{post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+        <span>{{post.date | date: "%b %-d, %Y" }}</span>
+        {{ post.excerpt }}
       </li>
     {% endfor %}
   </ul>
