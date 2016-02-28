@@ -1,9 +1,7 @@
 ---
-layout: default 
+layout: post 
 title: HK2 with Jersey
 ---
-
-### Using HK2 with Jersey
 
 Add the HK2 inhabitant generator plugin to the `pom.xml` of your project
 
@@ -119,7 +117,7 @@ public class UserController {
   public Response getUser(@PathParam("id") String id) {
     ...
   }
-  
+
 }
 {% endhighlight %}
 

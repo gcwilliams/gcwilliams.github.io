@@ -40,8 +40,19 @@ body {
   }
 }
 
-.home ul li p::after {
-  content: "...";
+.home ul li {
+  border-bottom: 1px solid $gray-lighter;
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 30px;
+  }
+  p::after {
+    content: "...";
+  }
+  time {
+    margin-bottom: 15px;
+    display: inline-block;
+  }
 }
 
 .highlight pre {
@@ -50,10 +61,6 @@ body {
 
 .highlight pre code {
   white-space: pre;
-}
-
-.highlighter-rouge pre code {
-  white-space: nowrap;
 }
 
 footer {
