@@ -45,11 +45,15 @@ body {
 }
 
 .highlight pre {
-    word-wrap: normal;
+  word-wrap: normal;
 }
 
 .highlight pre code {
-    white-space: pre;
+  white-space: pre;
+}
+
+.highlighter-rouge pre code {
+  white-space: nowrap;
 }
 
 footer {
