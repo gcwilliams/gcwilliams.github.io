@@ -21,7 +21,6 @@ body {
   position: relative;
   height: 200px;
   overflow: hidden;
-  margin-bottom: 25px;
   margin-top: 20px;
 
   @media all and (max-width: $screen-xs-max) {
@@ -43,6 +42,14 @@ body {
 
 .home ul li p::after {
   content: "...";
+}
+
+.highlight pre {
+    word-wrap: normal;
+}
+
+.highlight pre code {
+    white-space: pre;
 }
 
 footer {
