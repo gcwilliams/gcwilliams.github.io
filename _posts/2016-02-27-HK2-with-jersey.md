@@ -5,8 +5,6 @@ title: HK2 with Jersey
 
 Add the HK2 inhabitant generator plugin to the `pom.xml` of your project
 
-<!--more-->
-
 {% highlight xml %}
 <plugin>
   <groupId>org.glassfish.hk2</groupId>
@@ -24,6 +22,8 @@ Add the HK2 inhabitant generator plugin to the `pom.xml` of your project
 {% endhighlight %}
 
 Create a component provider which will populate the `ServiceLocator` created by `Jersey`
+
+<!--more-->
 
 {% highlight java %}
 public class ApplicationComponentProvider implements ComponentProvider {

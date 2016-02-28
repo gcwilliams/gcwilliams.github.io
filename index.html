@@ -12,8 +12,8 @@ banner: balcombe.jpg
         <h2>
           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        <time>{{post.date | date: "%b %-d, %Y" }}</time>
-        {{ post.excerpt }}
+        <time><strong>{{post.date | date: "%b %-d, %Y" }}</strong></time>
+        <article>{{ post.excerpt }}</article>
       </li>
     {% endfor %}
   </ul>

@@ -40,18 +40,23 @@ body {
   }
 }
 
-.home ul li {
-  border-bottom: 1px solid $gray-lighter;
-  &:last-child {
-    border-bottom: none;
-    margin-bottom: 30px;
+.home {
+  article {
+    padding: 0 0 0 20px;
   }
-  p::after {
-    content: "...";
-  }
-  time {
-    margin-bottom: 15px;
-    display: inline-block;
+  ul li {
+    border-bottom: 1px solid $gray-lighter;
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 30px;
+    }
+    p:last-of-type::after {
+      content: "..........";
+    }
+    time {
+      margin-bottom: 15px;
+      display: inline-block;
+    }
   }
 }
 
