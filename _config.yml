@@ -1,8 +1,8 @@
 # Site settings
 email: gaz_williams@hotmail.com
 description: >
-baseurl: "" 
 url: "http://www.gcwilliams.co.uk"
+baseurl: "" 
 github_username:  gcwilliams
 
 # Build settings
