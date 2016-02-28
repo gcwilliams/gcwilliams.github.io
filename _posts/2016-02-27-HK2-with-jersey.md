@@ -25,7 +25,7 @@ Add the HK2 inhabitant generator plugin to the `pom.xml` of your project
 </plugin>
 {% endhighlight %}
 
-Create an component provider which will populate the `ServiceLocator` created by `Jersey`
+Create a component provider which will populate the `ServiceLocator` created by `Jersey`
 
 {% highlight java %}
 public class ApplicationComponentProvider implements ComponentProvider {
@@ -81,7 +81,7 @@ public class UserServiceImpl implements UserService {
 }
 {% endhighlight %}
 
-or if the components are part of another project and you don't want to add a reference to the HK2 API package you can use a factory to populate the `ServiceLocator`
+or if the components are part of another project and you don't want to add a reference to the HK2 API package, you can use a factories to populate the `ServiceLocator`
 
 {% highlight java %}
 @Service
@@ -97,6 +97,29 @@ public class UserServiceFactory implements Factory<UserService> {
   public void dispose(UserService userService) {
     ...
   }
+}
+{% endhighlight %}
+
+You can now inject dependencies into the JAX-RS annotated classes
+
+
+{% highlight java %}
+@Path("/")
+public class UserController {
+
+  private final UserService userService;
+
+  @Inject
+  public UserController(UserService userService) {
+    this.userService = userService;
+  }
+
+  @GET
+  @Path("/{id}")
+  public Response getUser(@PathParam("id") String id) {
+    ...
+  }
+  
 }
 {% endhighlight %}
 
