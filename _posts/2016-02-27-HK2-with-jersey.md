@@ -57,7 +57,7 @@ in `META-INF/services` with the fully qualified name of the `ComponentProvider`
 
     uk.co.gcwilliams.jersey.ApplicationComponentProvider
 
-You should now be able to use `@Contract` and `@Service` from the HK2 API to populate the Jersey `ServiceLocator` with your own compoments
+You should now be able to use `@Contract` and `@Service` from the HK2 API to populate the Jersey `ServiceLocator` with your own components
 
 {% highlight java %}
 @Contract
