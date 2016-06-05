@@ -121,4 +121,4 @@ public class UserController {
 }
 {% endhighlight %}
 
-HK2 has builtin support for lots of features, AOP, Qualifiers, Scopes etc... checkout the HK2 [website](https://hk2.java.net)
+HK2 has builtin support for lots of features, AOP, Qualifiers, Scopes etc... checkout the HK2 [website](https://hk2.java.net){:target="_blank"}

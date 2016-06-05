@@ -9,7 +9,7 @@ I'm going to use bower to install [Lory](https://github.com/meandmax/lory) which
 
     bower install lory --save
 
-Now, following the Lory API we need to create a definition files for TypeScript, first we'll create the defintion of the function used to create a Lory carousel
+Now, following the Lory API we need to create a definition file for TypeScript, first we'll create the defintion of the function used to create a Lory carousel
 
 <!--more-->
 
@@ -118,4 +118,4 @@ export class Carousel implements OnChanges {
 }
 {% endhighlight %}
 
-Find the sample project [here](https://github.com/gcwilliams/angular2-lory)
+Find the sample project [here](https://github.com/gcwilliams/angular2-lory){:target="_blank"}
